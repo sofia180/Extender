@@ -1,5 +1,4 @@
 const formidable = require("formidable");
-const { google } = require("googleapis");
 
 const cors = (res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -15,9 +14,41 @@ const parseForm = (req) =>
         reject(err);
         return;
       }
-      resolve(fields);
+      const data = Object.fromEntries(
+        Object.entries(fields).map(([key, value]) => [key, Array.isArray(value) ? value[0] : value])
+      );
+      resolve(data);
     });
   });
+
+const forwardToSheets = async (data) => {
+  const endpoint = process.env.SHEETS_WEBHOOK_URL;
+  const secret = process.env.FORMS_SECRET;
+
+  if (!endpoint || !secret) {
+    throw new Error("Missing Sheets webhook configuration");
+  }
+
+  const payload = new URLSearchParams();
+  Object.entries(data).forEach(([key, value]) => {
+    if (value !== undefined && value !== null) {
+      payload.append(key, String(value));
+    }
+  });
+  payload.append("secret", secret);
+
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: payload.toString(),
+  });
+
+  if (!response.ok) {
+    throw new Error("Sheets webhook failed");
+  }
+};
 
 module.exports = async (req, res) => {
   cors(res);
@@ -35,66 +66,9 @@ module.exports = async (req, res) => {
     return;
   }
 
-  const sheetId = process.env.GOOGLE_SHEET_ID;
-  const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
-  const privateKey = (process.env.GOOGLE_PRIVATE_KEY || "").replace(/\\n/g, "\n");
-  const sheetName = process.env.GOOGLE_SHEET_TAB || "Leads";
-
-  if (!sheetId || !clientEmail || !privateKey) {
-    res.statusCode = 500;
-    res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify({ error: "Missing Google Sheets environment variables" }));
-    return;
-  }
-
   try {
-    const fields = await parseForm(req);
-    const data = Object.fromEntries(
-      Object.entries(fields).map(([key, value]) => [key, Array.isArray(value) ? value[0] : value])
-    );
-
-    const timestamp = new Date().toISOString();
-    const formType = data.formType || "contact";
-    const name = data.company || data.fullName || "";
-    const email = data.email || "";
-    const phone = data.phone || "";
-    const roleOrBudget = data.role || data.budget || "";
-    const timelineOrExperience = data.timeline || data.experience || "";
-    const details = data.description || data.message || "";
-    const link1 = data.linkedin || "";
-    const link2 = data.resume || "";
-
-    const auth = new google.auth.JWT({
-      email: clientEmail,
-      key: privateKey,
-      scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-    });
-
-    const sheets = google.sheets({ version: "v4", auth });
-
-    await sheets.spreadsheets.values.append({
-      spreadsheetId: sheetId,
-      range: `${sheetName}!A:Z`,
-      valueInputOption: "USER_ENTERED",
-      requestBody: {
-        values: [
-          [
-            timestamp,
-            formType,
-            name,
-            email,
-            phone,
-            roleOrBudget,
-            timelineOrExperience,
-            details,
-            link1,
-            link2,
-            JSON.stringify(data),
-          ],
-        ],
-      },
-    });
-
+    const data = await parseForm(req);
+    await forwardToSheets(data);
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
     res.end(JSON.stringify({ ok: true }));
