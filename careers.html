@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Extender | Contact</title>
+    <title>Extender | Careers</title>
     <meta
       name="description"
-      content="Contact Extender to request a proposal for dedicated execution teams."
+      content="Join Extender execution teams. Apply to work with us across growth, IT, audit, security, and legal operations."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,8 +38,8 @@
             <li><a class="nav-link" href="index.html">Home</a></li>
             <li><a class="nav-link" href="capabilities.html">Capabilities</a></li>
             <li><a class="nav-link" href="cases.html">Cases</a></li>
-            <li><a class="nav-link" href="careers.html">Careers</a></li>
-            <li><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li><a class="nav-link active" href="careers.html">Careers</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -55,11 +55,12 @@
     <main id="main">
       <section class="section">
         <div class="container reveal">
-          <span class="eyebrow">Contact</span>
-          <h1 class="section-title">Request a proposal from Extender.</h1>
+          <span class="eyebrow">Careers</span>
+          <h1 class="section-title">Join the teams that deliver complex programs.</h1>
           <p class="section-subtitle">
-            Share your requirements and we will assemble the right execution team for fintech,
-            enterprise IT, or regulated gaming programs.
+            Extender builds execution pods for high-stakes industries. We are always looking for
+            senior operators, strategists, and delivery leaders who thrive on accountability and
+            clarity.
           </p>
         </div>
       </section>
@@ -67,16 +68,16 @@
       <section class="section section-light">
         <div class="container contact-grid">
           <form
-            id="contact-form"
+            id="careers-form"
             class="card js-form"
             novalidate
             data-endpoint=""
-            data-success="Thanks for reaching out. We'll respond within one business day."
+            data-success="Thanks for your application. We'll respond within five business days."
           >
             <div class="form-grid">
               <div class="form-field">
-                <label for="company">Company name</label>
-                <input id="company" name="company" type="text" placeholder="Extender Inc." required />
+                <label for="full-name">Full name</label>
+                <input id="full-name" name="fullName" type="text" placeholder="Jane Doe" required />
               </div>
               <div class="form-field">
                 <label for="email">Email</label>
@@ -87,51 +88,76 @@
                 <input id="phone" name="phone" type="tel" placeholder="+1 (555) 123-4567" />
               </div>
               <div class="form-field">
-                <label for="budget">Budget range</label>
-                <select id="budget" name="budget" required>
-                  <option value="">Select a range</option>
-                  <option value="100-250">$100k - $250k</option>
-                  <option value="250-500">$250k - $500k</option>
-                  <option value="500-1000">$500k - $1M</option>
-                  <option value="1000+">$1M+</option>
+                <label for="role">Role of interest</label>
+                <select id="role" name="role" required>
+                  <option value="">Select a role</option>
+                  <option value="leadgen">Lead Generation / Outreach</option>
+                  <option value="marketing">Marketing / SMM / Content</option>
+                  <option value="design">Design / Landing / Creative</option>
+                  <option value="automation">IT / Automation / Bots</option>
+                  <option value="audit">Audit (Financial / Marketing / IT)</option>
+                  <option value="security">Security (Cyber / Data / Risk)</option>
+                  <option value="cloud">Cloud Services / Infrastructure</option>
+                  <option value="blockchain">Blockchain / Crypto Due Diligence</option>
+                  <option value="legal">Legal / Compliance</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
-              <div class="form-field span-2">
-                <label for="timeline">Timeline</label>
-                <input id="timeline" name="timeline" type="text" placeholder="Launch in Q2" required />
+              <div class="form-field">
+                <label for="experience">Experience level</label>
+                <select id="experience" name="experience" required>
+                  <option value="">Select level</option>
+                  <option value="1-3">1-3 years</option>
+                  <option value="3-5">3-5 years</option>
+                  <option value="5-8">5-8 years</option>
+                  <option value="8+">8+ years</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="location">Location / Timezone</label>
+                <input id="location" name="location" type="text" placeholder="Berlin (CET)" required />
+              </div>
+              <div class="form-field">
+                <label for="linkedin">LinkedIn or Portfolio</label>
+                <input
+                  id="linkedin"
+                  name="linkedin"
+                  type="url"
+                  placeholder="https://linkedin.com/in/username"
+                />
+              </div>
+              <div class="form-field">
+                <label for="resume">Resume link</label>
+                <input id="resume" name="resume" type="url" placeholder="https://drive.google.com/..." />
               </div>
               <div class="form-field span-2">
-                <label for="description">Project description</label>
+                <label for="message">Why Extender?</label>
                 <textarea
-                  id="description"
-                  name="description"
-                  placeholder="Tell us about your goals, scope, and current challenges."
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your expertise, preferred industries, and availability."
                   required
                 ></textarea>
               </div>
             </div>
             <div class="form-message" data-form-message="error" role="alert"></div>
-            <div
-              class="form-message"
-              data-form-message="success"
-              role="status"
-              aria-live="polite"
-            ></div>
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <div class="form-message" data-form-message="success" role="status" aria-live="polite"></div>
+            <button class="btn btn-primary" type="submit">Submit Application</button>
           </form>
 
           <aside class="reveal">
             <div class="card">
-              <h3 class="card-title">What happens next?</h3>
+              <h3 class="card-title">What we look for</h3>
               <p class="card-text">
-                Our team reviews your request, schedules a discovery call, and delivers a tailored
-                proposal within 48 hours.
+                We partner with senior operators who understand regulated environments and deliver
+                with clarity. We prioritize ownership, communication, and a bias for execution.
               </p>
-              <div class="case-details">
-                <span><strong>Email:</strong> hello@extender.example</span>
-                <span><strong>LinkedIn:</strong> Extender</span>
-                <span><strong>Availability:</strong> Global teams</span>
-              </div>
+              <ul class="cap-points">
+                <li>Experience in fintech, enterprise IT, or gaming.</li>
+                <li>Comfortable with structured reporting and KPIs.</li>
+                <li>Ability to work in cross-functional, distributed teams.</li>
+              </ul>
+              <div class="cap-meta">Average review cycle: 5 business days.</div>
             </div>
           </aside>
         </div>

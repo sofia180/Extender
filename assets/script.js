@@ -111,12 +111,12 @@
     }
   });
 
-  // Contact form validation
-  const form = document.querySelector("#contact-form");
-  if (form) {
-    const errorEl = document.querySelector("#form-error");
-    const successEl = document.querySelector("#form-success");
+  // Form validation (contact + careers)
+  document.querySelectorAll(".js-form").forEach((form) => {
+    const errorEl = form.querySelector("[data-form-message='error']");
+    const successEl = form.querySelector("[data-form-message='success']");
     const submitButton = form.querySelector("button[type='submit']");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     const showError = (message) => {
       if (errorEl) {
@@ -143,59 +143,49 @@
     form.addEventListener("submit", (event) => {
       event.preventDefault();
 
-      const company = form.querySelector("[name='company']");
-      const email = form.querySelector("[name='email']");
-      const phone = form.querySelector("[name='phone']");
-      const budget = form.querySelector("[name='budget']");
-      const timeline = form.querySelector("[name='timeline']");
-      const description = form.querySelector("[name='description']");
-
-      if (!company || !email || !budget || !timeline || !description) {
-        showError("Something went wrong. Please refresh and try again.");
-        return;
+      const requiredFields = Array.from(form.querySelectorAll("[required]"));
+      for (const field of requiredFields) {
+        if (!field.value || !field.value.trim()) {
+          showError("Please complete all required fields.");
+          field.focus();
+          return;
+        }
       }
 
-      if (!company.value.trim()) {
-        showError("Please enter your company name.");
-        company.focus();
-        return;
-      }
-
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!email.value.trim() || !emailPattern.test(email.value.trim())) {
+      const emailField = form.querySelector("input[type='email']");
+      if (emailField && !emailPattern.test(emailField.value.trim())) {
         showError("Please provide a valid email address.");
-        email.focus();
+        emailField.focus();
         return;
       }
 
-      if (phone && phone.value.trim() && phone.value.trim().length < 7) {
+      const phoneField = form.querySelector("input[type='tel']");
+      if (phoneField && phoneField.value.trim() && phoneField.value.trim().length < 7) {
         showError("Please provide a valid phone number.");
-        phone.focus();
+        phoneField.focus();
         return;
       }
 
-      if (!budget.value) {
-        showError("Please select a budget range.");
-        budget.focus();
-        return;
-      }
-
-      if (!timeline.value.trim()) {
-        showError("Please share your project timeline.");
-        timeline.focus();
-        return;
-      }
-
-      if (!description.value.trim()) {
-        showError("Please describe your project needs.");
-        description.focus();
-        return;
+      const urlFields = Array.from(form.querySelectorAll("input[type='url']"));
+      for (const field of urlFields) {
+        if (field.value.trim()) {
+          try {
+            new URL(field.value.trim());
+          } catch (error) {
+            showError("Please provide a valid URL.");
+            field.focus();
+            return;
+          }
+        }
       }
 
       const endpoint = form.getAttribute("data-endpoint");
       const hasEndpoint = endpoint && endpoint.trim() !== "";
+      const successMessage =
+        form.getAttribute("data-success") ||
+        "Thanks for reaching out. We'll respond within one business day.";
 
-      const finalize = (successMessage) => {
+      const finalize = () => {
         form.reset();
         showSuccess(successMessage);
       };
@@ -212,7 +202,7 @@
             if (!response.ok) {
               throw new Error("Network response was not ok");
             }
-            finalize("Thanks for reaching out. We'll respond within one business day.");
+            finalize();
           })
           .catch(() => {
             showError("Submission failed. Please try again or email hello@extender.example.");
@@ -226,11 +216,11 @@
         return;
       }
 
-      finalize("Thanks for reaching out. We'll respond within one business day.");
+      finalize();
       if (submitButton) {
         submitButton.disabled = false;
         submitButton.textContent = "Submit";
       }
     });
-  }
+  });
 })();
