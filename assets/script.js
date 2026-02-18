@@ -95,6 +95,22 @@
     });
   });
 
+  document.querySelectorAll(".cap-content img").forEach((img) => {
+    const updateHeight = () => {
+      const item = img.closest(".cap-item");
+      const content = img.closest(".cap-content");
+      if (item && content && item.classList.contains("open")) {
+        content.style.maxHeight = `${content.scrollHeight}px`;
+      }
+    };
+
+    if (img.complete) {
+      updateHeight();
+    } else {
+      img.addEventListener("load", updateHeight);
+    }
+  });
+
   // Contact form validation
   const form = document.querySelector("#contact-form");
   if (form) {

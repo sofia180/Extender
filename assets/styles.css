@@ -483,6 +483,12 @@ main {
   background: radial-gradient(circle at top, rgba(47, 123, 255, 0.18), transparent 55%);
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .card:hover {
@@ -784,6 +790,52 @@ main {
   transform: rotate(45deg);
 }
 
+.cap-body {
+  display: grid;
+  gap: 18px;
+  align-items: start;
+}
+
+.cap-media {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: rgba(10, 14, 20, 0.8);
+}
+
+.section-light .cap-media {
+  border-color: var(--border-light);
+  background: #ffffff;
+}
+
+.cap-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cap-points {
+  margin: 16px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.section-light .cap-points {
+  color: var(--muted-dark);
+}
+
+.cap-points li {
+  margin-bottom: 6px;
+}
+
+.cap-meta {
+  margin-top: 12px;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 /* Cases page */
 .case-card {
   display: grid;
@@ -951,6 +1003,10 @@ textarea {
 
   .form-grid .span-2 {
     grid-column: span 2;
+  }
+
+  .cap-body {
+    grid-template-columns: 1fr 1.2fr;
   }
 }
 
