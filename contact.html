@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extender | Contact</title>
+    <meta
+      name="description"
+      content="Contact Extender to request a proposal for dedicated execution teams."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <a class="sr-only" href="#main">Skip to main content</a>
+
+    <!-- Fixed Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav-list nav-menu" id="primary-menu">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="capabilities.html">Capabilities</a></li>
+            <li><a class="nav-link" href="cases.html">Cases</a></li>
+            <li><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-primary" href="contact.html">Request a Proposal</a>
+          <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
+            <span></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container reveal">
+          <span class="eyebrow">Contact</span>
+          <h1 class="section-title">Request a proposal from Extender.</h1>
+          <p class="section-subtitle">
+            Share your requirements and we will assemble the right execution team for fintech,
+            enterprise IT, or regulated gaming projects.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <form id="contact-form" class="card" novalidate data-endpoint="">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="company">Company name</label>
+                <input id="company" name="company" type="text" placeholder="Extender Inc." required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@company.com" required />
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+1 (555) 123-4567" />
+              </div>
+              <div class="form-field">
+                <label for="budget">Budget range</label>
+                <select id="budget" name="budget" required>
+                  <option value="">Select a range</option>
+                  <option value="100-250">$100k - $250k</option>
+                  <option value="250-500">$250k - $500k</option>
+                  <option value="500-1000">$500k - $1M</option>
+                  <option value="1000+">$1M+</option>
+                </select>
+              </div>
+              <div class="form-field span-2">
+                <label for="timeline">Timeline</label>
+                <input id="timeline" name="timeline" type="text" placeholder="Launch in Q2" required />
+              </div>
+              <div class="form-field span-2">
+                <label for="description">Project description</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  placeholder="Tell us about your goals, scope, and current challenges."
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div id="form-error" class="form-message" role="alert"></div>
+            <div id="form-success" class="form-message" role="status" aria-live="polite"></div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+
+          <aside class="reveal">
+            <div class="card">
+              <h3 class="card-title">What happens next?</h3>
+              <p class="card-text">
+                Our team reviews your request, schedules a discovery call, and delivers a tailored
+                proposal within 48 hours.
+              </p>
+              <div class="case-details">
+                <span><strong>Email:</strong> hello@extender.example</span>
+                <span><strong>LinkedIn:</strong> Extender</span>
+                <span><strong>Availability:</strong> Global teams</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+        <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
+          <p class="footer-meta">Dedicated execution teams for complex enterprise work.</p>
+        </div>
+        <div class="footer-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="capabilities.html">Capabilities</a>
+          <a class="nav-link" href="cases.html">Cases</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+        <div>
+          <p class="footer-meta">hello@extender.example</p>
+          <p class="footer-meta">LinkedIn: Extender</p>
+          <p class="footer-meta">© 2026 Extender. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
