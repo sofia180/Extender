@@ -116,6 +116,7 @@
     const errorEl = form.querySelector("[data-form-message='error']");
     const successEl = form.querySelector("[data-form-message='success']");
     const submitButton = form.querySelector("button[type='submit']");
+    const submitLabel = submitButton ? submitButton.textContent : "Submit";
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     const showError = (message) => {
@@ -210,7 +211,7 @@
           .finally(() => {
             if (submitButton) {
               submitButton.disabled = false;
-              submitButton.textContent = "Submit";
+              submitButton.textContent = submitLabel;
             }
           });
         return;
@@ -219,7 +220,7 @@
       finalize();
       if (submitButton) {
         submitButton.disabled = false;
-        submitButton.textContent = "Submit";
+        submitButton.textContent = submitLabel;
       }
     });
   });

@@ -71,9 +71,10 @@
             id="careers-form"
             class="card js-form"
             novalidate
-            data-endpoint=""
+            data-endpoint="https://extender12.vercel.app/api/forms"
             data-success="Thanks for your application. We'll respond within five business days."
           >
+            <input type="hidden" name="formType" value="careers" />
             <div class="form-grid">
               <div class="form-field">
                 <label for="full-name">Full name</label>

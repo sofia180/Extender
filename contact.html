@@ -70,9 +70,10 @@
             id="contact-form"
             class="card js-form"
             novalidate
-            data-endpoint=""
+            data-endpoint="https://extender12.vercel.app/api/forms"
             data-success="Thanks for reaching out. We'll respond within one business day."
           >
+            <input type="hidden" name="formType" value="contact" />
             <div class="form-grid">
               <div class="form-field">
                 <label for="company">Company name</label>
