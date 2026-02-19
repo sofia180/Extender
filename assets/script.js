@@ -206,7 +206,7 @@
             finalize();
           })
           .catch(() => {
-            showError("Submission failed. Please try again or email hello@extender.example.");
+            showError("Submission failed. Please try again or email hello@extender.cards.");
           })
           .finally(() => {
             if (submitButton) {
