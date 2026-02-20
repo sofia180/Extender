@@ -198,9 +198,15 @@
 
       if (hasEndpoint) {
         const formData = new FormData(form);
-        fetch(endpoint, { method: "POST", body: formData })
+        fetch(endpoint, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        })
           .then((response) => {
-            if (!response.ok) {
+            if (!response.ok && response.status >= 400) {
               throw new Error("Network response was not ok");
             }
             finalize();
