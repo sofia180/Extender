@@ -952,6 +952,7 @@ main {
   overflow: hidden;
   border: 1px solid var(--border);
   background: rgba(10, 14, 20, 0.8);
+  aspect-ratio: 4 / 3;
 }
 
 .section-light .cap-media {
@@ -961,7 +962,8 @@ main {
 
 .cap-media img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 

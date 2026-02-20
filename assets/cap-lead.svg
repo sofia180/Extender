@@ -1,0 +1,43 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f9ff" />
+      <stop offset="100%" stop-color="#e9edf7" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f7bff" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0b0d10" stop-opacity="0.35" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="52" fill="url(#bg)" />
+  <rect x="90" y="120" width="1020" height="560" rx="40" fill="#ffffff" stroke="#dfe5f1" stroke-width="2" />
+  <rect x="90" y="120" width="1020" height="88" rx="40" fill="#f3f6fd" />
+  <circle cx="150" cy="164" r="8" fill="#c9d3e5" />
+  <circle cx="178" cy="164" r="8" fill="#c9d3e5" />
+  <circle cx="206" cy="164" r="8" fill="#c9d3e5" />
+  <ellipse cx="930" cy="260" rx="210" ry="150" fill="url(#accent)" opacity="0.2" />
+  <rect x="150" y="250" width="420" height="300" rx="28" fill="#f8faff" stroke="#e3e9f5" stroke-width="2" />
+  <rect x="610" y="300" width="420" height="200" rx="26" fill="#f7f9ff" stroke="#e3e9f5" stroke-width="2" />
+  <g stroke="#d3dbee" stroke-width="2" opacity="0.6">
+    <line x1="170" y1="330" x2="550" y2="330" />
+    <line x1="170" y1="390" x2="550" y2="390" />
+    <line x1="170" y1="450" x2="550" y2="450" />
+    <line x1="640" y1="360" x2="1000" y2="360" />
+    <line x1="640" y1="420" x2="1000" y2="420" />
+  </g>
+  
+  <g stroke="url(#accent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="280" y1="360" x2="430" y2="300" />
+    <line x1="430" y1="300" x2="560" y2="380" />
+    <line x1="280" y1="360" x2="380" y2="460" />
+    <line x1="380" y1="460" x2="560" y2="380" />
+  </g>
+  <g fill="#ffffff" stroke="#b6c6e0" stroke-width="3">
+    <circle cx="280" cy="360" r="24" />
+    <circle cx="430" cy="300" r="24" />
+    <circle cx="560" cy="380" r="24" />
+    <circle cx="380" cy="460" r="24" />
+  </g>
+  <circle cx="430" cy="300" r="12" fill="url(#accent)" />
+
+</svg>
