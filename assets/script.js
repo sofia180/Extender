@@ -201,6 +201,8 @@
       "capabilities.automation.b2": "RPA и боты для повторяющихся операций.",
       "capabilities.automation.b3": "Внутренние инструменты, дашборды и оркестрация.",
       "capabilities.automation.b4": "Мониторинг, runbook‑и и документация.",
+      "capabilities.automation.b5":
+        "Могу добавить локализацию для чисел, валют и форматов дат, если нужно.",
       "capabilities.automation.meta":
         "Результаты: сценарии автоматизации, боты, интеграционная документация, runbook‑и.",
       "capabilities.audit.title": "Аудит (финансы, маркетинг, IT)",
@@ -773,6 +775,8 @@
       "capabilities.automation.b2": "RPA та боти для повторюваних операцій.",
       "capabilities.automation.b3": "Внутрішні інструменти, дашборди та оркестрація.",
       "capabilities.automation.b4": "Моніторинг, runbook‑и та документація.",
+      "capabilities.automation.b5":
+        "Можу додати локалізацію для чисел, валют і форматів дат за потреби.",
       "capabilities.automation.meta":
         "Результати: сценарії автоматизації, боти, інтеграційна документація, runbook‑и.",
       "capabilities.audit.title": "Аудит (фінанси, маркетинг, IT)",
@@ -1303,6 +1307,7 @@
       "capabilities.automation.b2": "RPA 与机器人开发。",
       "capabilities.automation.b3": "内部工具、仪表盘与流程编排。",
       "capabilities.automation.b4": "监控、运行手册与文档。",
+      "capabilities.automation.b5": "如有需要，可添加数字、货币和日期格式的本地化。",
       "capabilities.automation.meta": "交付物：自动化流程、机器人脚本、集成文档、runbook。",
       "capabilities.audit.title": "审计（财务 / 营销 / IT）",
       "capabilities.audit.p1": "独立审计财务、营销支出与 IT 架构，输出整改计划。",
