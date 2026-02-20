@@ -35,19 +35,26 @@
         <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
         <nav class="nav" aria-label="Primary">
           <ul class="nav-list nav-menu" id="primary-menu">
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="capabilities.html">Capabilities</a></li>
-            <li><a class="nav-link" href="cases.html">Cases</a></li>
-            <li><a class="nav-link active" href="documents.html">Documents</a></li>
-            <li><a class="nav-link" href="careers.html">Careers</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a class="nav-link" href="capabilities.html" data-i18n="nav.capabilities">Capabilities</a></li>
+            <li><a class="nav-link" href="cases.html" data-i18n="nav.cases">Cases</a></li>
+            <li><a class="nav-link active" href="documents.html" data-i18n="nav.documents">Documents</a></li>
+            <li><a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a></li>
+            <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-actions">
-          <a class="btn btn-primary" href="contact.html">Request a Proposal</a>
+
+          <div class="lang-switcher" role="group" aria-label="Language">
+            <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+            <button class="lang-btn" type="button" data-lang="uk" aria-pressed="false">UA</button>
+            <button class="lang-btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.request">Request a Proposal</a>
           <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
             <span></span>
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only" data-i18n="nav.toggle">Toggle navigation</span>
           </button>
         </div>
       </div>
@@ -57,26 +64,28 @@
       <!-- Hero -->
       <section class="section">
         <div class="container reveal">
-          <span class="eyebrow">Governance</span>
-          <h1 class="section-title">Legal, compliance, and cooperation documentation.</h1>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="documents.hero.eyebrow">Governance</span>
+          <h1 class="section-title" data-i18n="documents.hero.title">
+            Legal, compliance, and cooperation documentation.
+          </h1>
+          <p class="section-subtitle" data-i18n="documents.hero.subtitle">
             This documentation pack is designed for enterprise procurement, regulated delivery,
             and long-term partnerships. It includes terms, policies, and operational guidance that
             define how Extender works with clients, regulators, and partners.
           </p>
           <div class="doc-toc">
-            <a href="#terms">Terms</a>
-            <a href="#commercials">Commercials</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#dpa">DPA</a>
-            <a href="#security">Security</a>
-            <a href="#sla">SLA</a>
-            <a href="#aup">Acceptable Use</a>
-            <a href="#cookies">Cookies</a>
-            <a href="#cooperation">Cooperation</a>
-            <a href="#faq">FAQ</a>
+            <a href="#terms" data-i18n="documents.toc.terms">Terms</a>
+            <a href="#commercials" data-i18n="documents.toc.commercials">Commercials</a>
+            <a href="#privacy" data-i18n="documents.toc.privacy">Privacy</a>
+            <a href="#dpa" data-i18n="documents.toc.dpa">DPA</a>
+            <a href="#security" data-i18n="documents.toc.security">Security</a>
+            <a href="#sla" data-i18n="documents.toc.sla">SLA</a>
+            <a href="#aup" data-i18n="documents.toc.aup">Acceptable Use</a>
+            <a href="#cookies" data-i18n="documents.toc.cookies">Cookies</a>
+            <a href="#cooperation" data-i18n="documents.toc.cooperation">Cooperation</a>
+            <a href="#faq" data-i18n="documents.toc.faq">FAQ</a>
           </div>
-          <p class="doc-note">
+          <p class="doc-note" data-i18n="documents.hero.note">
             These documents are professional templates for review by your legal and compliance teams.
             We will tailor them to your scope, jurisdiction, and procurement requirements.
           </p>
@@ -86,72 +95,96 @@
       <!-- Document Library -->
       <section class="section section-light" id="library">
         <div class="container">
-          <span class="eyebrow">Document Library</span>
-          <h2 class="section-title">Full professional document pack.</h2>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="documents.library.eyebrow">Document Library</span>
+          <h2 class="section-title" data-i18n="documents.library.title">Full professional document pack.</h2>
+          <p class="section-subtitle" data-i18n="documents.library.subtitle">
             Each document below is a standalone module that can be provided to procurement,
             legal, and security reviewers. Jump directly to the section you need.
           </p>
           <div class="doc-grid">
             <a class="card doc-card reveal" href="#terms">
               <div class="icon">TS</div>
-              <h3 class="card-title">Terms of Service</h3>
-              <p class="card-text">Master terms, scope, payments, IP, and liability.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.terms.title">Terms of Service</h3>
+              <p class="card-text" data-i18n="documents.card.terms.text">
+                Master terms, scope, payments, IP, and liability.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
             <a class="card doc-card reveal" href="#commercials">
               <div class="icon">CP</div>
-              <h3 class="card-title">Commercials & Pricing</h3>
-              <p class="card-text">What is included in the project fee and add-ons.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.commercials.title">
+                Commercials & Pricing
+              </h3>
+              <p class="card-text" data-i18n="documents.card.commercials.text">
+                What is included in the project fee and add-ons.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
             <a class="card doc-card reveal" href="#privacy">
               <div class="icon">PP</div>
-              <h3 class="card-title">Privacy Policy</h3>
-              <p class="card-text">Personal data collection, use, retention, and rights.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.privacy.title">Privacy Policy</h3>
+              <p class="card-text" data-i18n="documents.card.privacy.text">
+                Personal data collection, use, retention, and rights.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
             <a class="card doc-card reveal" href="#dpa">
               <div class="icon">DP</div>
-              <h3 class="card-title">Data Processing Addendum</h3>
-              <p class="card-text">Processor obligations and cross-border safeguards.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.dpa.title">Data Processing Addendum</h3>
+              <p class="card-text" data-i18n="documents.card.dpa.text">
+                Processor obligations and cross-border safeguards.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
             <a class="card doc-card reveal" href="#security">
               <div class="icon">SC</div>
-              <h3 class="card-title">Security & Compliance</h3>
-              <p class="card-text">Control framework, audits, incident response.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.security.title">Security & Compliance</h3>
+              <p class="card-text" data-i18n="documents.card.security.text">
+                Control framework, audits, incident response.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
             <a class="card doc-card reveal" href="#sla">
               <div class="icon">SL</div>
-              <h3 class="card-title">Service Level Agreement</h3>
-              <p class="card-text">Availability targets, support tiers, escalation.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.sla.title">Service Level Agreement</h3>
+              <p class="card-text" data-i18n="documents.card.sla.text">
+                Availability targets, support tiers, escalation.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
             <a class="card doc-card reveal" href="#aup">
               <div class="icon">AU</div>
-              <h3 class="card-title">Acceptable Use Policy</h3>
-              <p class="card-text">Use restrictions for regulated programs.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.aup.title">Acceptable Use Policy</h3>
+              <p class="card-text" data-i18n="documents.card.aup.text">
+                Use restrictions for regulated programs.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
             <a class="card doc-card reveal" href="#cookies">
               <div class="icon">CK</div>
-              <h3 class="card-title">Cookie Policy</h3>
-              <p class="card-text">Analytics, preferences, and cookie control.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.cookies.title">Cookie Policy</h3>
+              <p class="card-text" data-i18n="documents.card.cookies.text">
+                Analytics, preferences, and cookie control.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
             <a class="card doc-card reveal" href="#cooperation">
               <div class="icon">CO</div>
-              <h3 class="card-title">Cooperation & Partnership</h3>
-              <p class="card-text">Engagement model, governance, and onboarding.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.cooperation.title">
+                Cooperation & Partnership
+              </h3>
+              <p class="card-text" data-i18n="documents.card.cooperation.text">
+                Engagement model, governance, and onboarding.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
             <a class="card doc-card reveal" href="#faq">
               <div class="icon">FAQ</div>
-              <h3 class="card-title">FAQ</h3>
-              <p class="card-text">Procurement and delivery questions answered.</p>
-              <span class="doc-link">View document</span>
+              <h3 class="card-title" data-i18n="documents.card.faq.title">FAQ</h3>
+              <p class="card-text" data-i18n="documents.card.faq.text">
+                Procurement and delivery questions answered.
+              </p>
+              <span class="doc-link" data-i18n="documents.card.view">View document</span>
             </a>
           </div>
         </div>
@@ -571,20 +604,22 @@
       <div class="container footer-grid">
         <div>
           <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
-          <p class="footer-meta">Dedicated execution teams for regulated, high-stakes programs.</p>
+          <p class="footer-meta" data-i18n="footer.tagline">
+            Dedicated execution teams for regulated, high-stakes programs.
+          </p>
         </div>
         <div class="footer-links">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="capabilities.html">Capabilities</a>
-          <a class="nav-link" href="cases.html">Cases</a>
-          <a class="nav-link" href="documents.html">Documents</a>
-          <a class="nav-link" href="careers.html">Careers</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="index.html" data-i18n="nav.home">Home</a>
+          <a class="nav-link" href="capabilities.html" data-i18n="nav.capabilities">Capabilities</a>
+          <a class="nav-link" href="cases.html" data-i18n="nav.cases">Cases</a>
+          <a class="nav-link" href="documents.html" data-i18n="nav.documents">Documents</a>
+          <a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a>
+          <a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
         </div>
         <div>
           <p class="footer-meta">hello@extender.cards</p>
-          <p class="footer-meta">LinkedIn: Extender</p>
-          <p class="footer-meta">© 2026 Extender. All rights reserved.</p>
+          <p class="footer-meta" data-i18n="footer.linkedin">LinkedIn: Extender</p>
+          <p class="footer-meta" data-i18n="footer.rights">© 2026 Extender. All rights reserved.</p>
         </div>
       </div>
     </footer>

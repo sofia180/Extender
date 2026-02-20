@@ -35,19 +35,26 @@
         <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
         <nav class="nav" aria-label="Primary">
           <ul class="nav-list nav-menu" id="primary-menu">
-            <li><a class="nav-link active" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="capabilities.html">Capabilities</a></li>
-            <li><a class="nav-link" href="cases.html">Cases</a></li>
-            <li><a class="nav-link" href="documents.html">Documents</a></li>
-            <li><a class="nav-link" href="careers.html">Careers</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link active" href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a class="nav-link" href="capabilities.html" data-i18n="nav.capabilities">Capabilities</a></li>
+            <li><a class="nav-link" href="cases.html" data-i18n="nav.cases">Cases</a></li>
+            <li><a class="nav-link" href="documents.html" data-i18n="nav.documents">Documents</a></li>
+            <li><a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a></li>
+            <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-actions">
-          <a class="btn btn-primary" href="contact.html">Request a Proposal</a>
+
+          <div class="lang-switcher" role="group" aria-label="Language">
+            <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+            <button class="lang-btn" type="button" data-lang="uk" aria-pressed="false">UA</button>
+            <button class="lang-btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.request">Request a Proposal</a>
           <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
             <span></span>
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only" data-i18n="nav.toggle">Toggle navigation</span>
           </button>
         </div>
       </div>
@@ -58,41 +65,43 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-content reveal">
-            <span class="eyebrow">Extender Execution Teams</span>
-            <h1>Dedicated execution teams engineered for high-risk, high-complexity programs.</h1>
-            <p>
+            <span class="eyebrow" data-i18n="index.hero.eyebrow">Extender Execution Teams</span>
+            <h1 data-i18n="index.hero.title">
+              Dedicated execution teams engineered for high-risk, high-complexity programs.
+            </h1>
+            <p data-i18n="index.hero.subtitle">
               Extender designs and operates cross-functional pods that deliver regulated growth,
               enterprise IT modernization, and compliance-critical execution with total
               accountability.
             </p>
             <div class="hero-tags">
-              <span class="hero-tag">Fintech</span>
-              <span class="hero-tag">Enterprise IT</span>
-              <span class="hero-tag">Gambling/Betting</span>
-              <span class="hero-tag">Cloud</span>
-              <span class="hero-tag">Compliance</span>
-              <span class="hero-tag">Legal</span>
+              <span class="hero-tag" data-i18n="tag.fintech">Fintech</span>
+              <span class="hero-tag" data-i18n="tag.enterpriseIT">Enterprise IT</span>
+              <span class="hero-tag" data-i18n="tag.gambling">Gambling/Betting</span>
+              <span class="hero-tag" data-i18n="tag.cloud">Cloud</span>
+              <span class="hero-tag" data-i18n="tag.compliance">Compliance</span>
+              <span class="hero-tag" data-i18n="tag.legal">Legal</span>
             </div>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="contact.html">Request a Proposal</a>
-              <a class="btn btn-secondary" href="capabilities.html">See Capabilities</a>
+              <a class="btn btn-primary" href="contact.html" data-i18n="cta.request">Request a Proposal</a>
+              <a class="btn btn-secondary" href="capabilities.html" data-i18n="cta.capabilities">See Capabilities</a>
             </div>
             <div class="hero-stats">
               <div class="hero-stat">
                 <strong>48h</strong>
-                <span>Proposal turnaround</span>
+                <span data-i18n="index.hero.stat.turnaround">Proposal turnaround</span>
               </div>
               <div class="hero-stat">
                 <strong>12+</strong>
-                <span>Roles per execution pod</span>
+                <span data-i18n="index.hero.stat.roles">Roles per execution pod</span>
               </div>
               <div class="hero-stat">
                 <strong>2 days - 6 weeks</strong>
-                <span>From kickoff to delivery</span>
+                <span data-i18n="index.hero.stat.timeline">From kickoff to delivery</span>
               </div>
               <div class="hero-stat">
                 <strong>99.2%</strong>
-                <span>Delivery SLA adherence</span>
+                <span data-i18n="index.hero.stat.sla">Delivery SLA adherence</span>
               </div>
             </div>
           </div>
@@ -104,11 +113,11 @@
             <div class="hero-metrics">
               <div class="metric">
                 <strong>24/7</strong>
-                <span>Global coverage</span>
+                <span data-i18n="index.hero.metric.coverage">Global coverage</span>
               </div>
               <div class="metric">
                 <strong>4x</strong>
-                <span>Throughput lift</span>
+                <span data-i18n="index.hero.metric.throughput">Throughput lift</span>
               </div>
             </div>
           </div>
@@ -118,73 +127,91 @@
       <!-- Services Section -->
       <section class="section section-light" id="services">
         <div class="container">
-          <span class="eyebrow">Services</span>
-          <h2 class="section-title">Execution pods designed to scale with enterprise velocity.</h2>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="index.services.eyebrow">Services</span>
+          <h2 class="section-title" data-i18n="index.services.title">
+            Execution pods designed to scale with enterprise velocity.
+          </h2>
+          <p class="section-subtitle" data-i18n="index.services.subtitle">
             We integrate strategy, delivery, and governance into a single operating model built for
             regulated growth and complex stakeholder environments.
           </p>
           <div class="services-grid">
             <article class="card service-card reveal">
               <div class="icon">LG</div>
-              <h3 class="card-title">Lead Generation / Outreach</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.services.lead.title">
+                Lead Generation / Outreach
+              </h3>
+              <p class="card-text" data-i18n="index.services.lead.text">
                 Outbound systems, call workflows, and SDR playbooks that create qualified pipeline.
               </p>
             </article>
             <article class="card service-card reveal">
               <div class="icon">SM</div>
-              <h3 class="card-title">Marketing / SMM / Content</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.services.marketing.title">
+                Marketing / SMM / Content
+              </h3>
+              <p class="card-text" data-i18n="index.services.marketing.text">
                 Always-on content operations, social distribution, and paid performance reporting.
               </p>
             </article>
             <article class="card service-card reveal">
               <div class="icon">DS</div>
-              <h3 class="card-title">Design / Landing / Creative</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.services.design.title">
+                Design / Landing / Creative
+              </h3>
+              <p class="card-text" data-i18n="index.services.design.text">
                 Conversion-first landing pages, brand systems, and campaign creative production.
               </p>
             </article>
             <article class="card service-card reveal">
               <div class="icon">IT</div>
-              <h3 class="card-title">IT / Automation / Bots</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.services.automation.title">
+                IT / Automation / Bots
+              </h3>
+              <p class="card-text" data-i18n="index.services.automation.text">
                 Workflow automation, internal tools, bots, and systems integration at scale.
               </p>
             </article>
             <article class="card service-card reveal">
               <div class="icon">AU</div>
-              <h3 class="card-title">Audit (Financial, Marketing, IT)</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.services.audit.title">
+                Audit (Financial, Marketing, IT)
+              </h3>
+              <p class="card-text" data-i18n="index.services.audit.text">
                 Independent audits with control gaps, cost leaks, and optimization priorities.
               </p>
             </article>
             <article class="card service-card reveal">
               <div class="icon">SE</div>
-              <h3 class="card-title">Security (Cyber, Data, Risk)</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.services.security.title">
+                Security (Cyber, Data, Risk)
+              </h3>
+              <p class="card-text" data-i18n="index.services.security.text">
                 Security posture reviews, data protection programs, and risk mitigation plans.
               </p>
             </article>
             <article class="card service-card reveal">
               <div class="icon">CL</div>
-              <h3 class="card-title">Cloud Services / Storage / Infrastructure</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.services.cloud.title">
+                Cloud Services / Storage / Infrastructure
+              </h3>
+              <p class="card-text" data-i18n="index.services.cloud.text">
                 Cloud migration, storage strategy, and resilient infrastructure operations.
               </p>
             </article>
             <article class="card service-card reveal">
               <div class="icon">BC</div>
-              <h3 class="card-title">Blockchain / Crypto Due Diligence</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.services.blockchain.title">
+                Blockchain / Crypto Due Diligence
+              </h3>
+              <p class="card-text" data-i18n="index.services.blockchain.text">
                 Technical, legal, and financial validation for crypto projects and startups.
               </p>
             </article>
             <article class="card service-card reveal">
               <div class="icon">LC</div>
-              <h3 class="card-title">Legal &amp; Compliance</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.services.legal.title">Legal &amp; Compliance</h3>
+              <p class="card-text" data-i18n="index.services.legal.text">
                 Contract governance, policy architecture, and regulatory alignment across regions.
               </p>
             </article>
@@ -195,31 +222,33 @@
       <!-- How We Work -->
       <section class="section section-light" id="how">
         <div class="container">
-          <span class="eyebrow">How We Work</span>
-          <h2 class="section-title">A precision operating model from day one.</h2>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="index.how.eyebrow">How We Work</span>
+          <h2 class="section-title" data-i18n="index.how.title">
+            A precision operating model from day one.
+          </h2>
+          <p class="section-subtitle" data-i18n="index.how.subtitle">
             We integrate with leadership, legal, and technical stakeholders to deliver measurable
             outcomes with full transparency.
           </p>
           <ol class="steps">
             <li class="step reveal">
               <div class="step-number">1</div>
-              <h3 class="card-title">Team Setup</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.how.step1.title">Team Setup</h3>
+              <p class="card-text" data-i18n="index.how.step1.text">
                 Define scope, recruit specialists, and align governance within two weeks.
               </p>
             </li>
             <li class="step reveal">
               <div class="step-number">2</div>
-              <h3 class="card-title">Execution</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.how.step2.title">Execution</h3>
+              <p class="card-text" data-i18n="index.how.step2.text">
                 Operate in agile workstreams with transparent reporting and quality gates.
               </p>
             </li>
             <li class="step reveal">
               <div class="step-number">3</div>
-              <h3 class="card-title">Scaling</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.how.step3.title">Scaling</h3>
+              <p class="card-text" data-i18n="index.how.step3.text">
                 Expand capacity on demand while keeping leadership and accountability intact.
               </p>
             </li>
@@ -230,29 +259,31 @@
       <!-- Team Architecture -->
       <section class="section" id="architecture">
         <div class="container">
-          <span class="eyebrow">Team Architecture</span>
-          <h2 class="section-title">Structured leadership with intelligent scale.</h2>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="index.arch.eyebrow">Team Architecture</span>
+          <h2 class="section-title" data-i18n="index.arch.title">
+            Structured leadership with intelligent scale.
+          </h2>
+          <p class="section-subtitle" data-i18n="index.arch.subtitle">
             A clear hierarchy that keeps strategy, delivery, and execution aligned across every
             workstream.
           </p>
           <div class="diagram">
             <div class="diagram-level reveal">
-              <div class="diagram-card">Strategic Lead</div>
+              <div class="diagram-card" data-i18n="index.arch.lead">Strategic Lead</div>
             </div>
             <div class="diagram-connector"></div>
             <div class="diagram-level wide reveal">
               <div class="diagram-spread"></div>
-              <div class="diagram-card">Block Leader 1</div>
-              <div class="diagram-card">Block Leader 2</div>
-              <div class="diagram-card">Block Leader 3</div>
-              <div class="diagram-card">Block Leader 4</div>
-              <div class="diagram-card">Block Leader 5</div>
+              <div class="diagram-card" data-i18n="index.arch.block1">Block Leader 1</div>
+              <div class="diagram-card" data-i18n="index.arch.block2">Block Leader 2</div>
+              <div class="diagram-card" data-i18n="index.arch.block3">Block Leader 3</div>
+              <div class="diagram-card" data-i18n="index.arch.block4">Block Leader 4</div>
+              <div class="diagram-card" data-i18n="index.arch.block5">Block Leader 5</div>
             </div>
             <div class="diagram-connector"></div>
             <div class="diagram-level reveal">
-              <div class="diagram-card">Core Team</div>
-              <div class="diagram-card">Reserve Network</div>
+              <div class="diagram-card" data-i18n="index.arch.core">Core Team</div>
+              <div class="diagram-card" data-i18n="index.arch.reserve">Reserve Network</div>
             </div>
           </div>
         </div>
@@ -261,63 +292,71 @@
       <!-- Case Studies Preview -->
       <section class="section section-light" id="cases">
         <div class="container">
-          <span class="eyebrow">Case Studies</span>
-          <h2 class="section-title">Execution stories across regulated industries.</h2>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="index.cases.eyebrow">Case Studies</span>
+          <h2 class="section-title" data-i18n="index.cases.title">
+            Execution stories across regulated industries.
+          </h2>
+          <p class="section-subtitle" data-i18n="index.cases.subtitle">
             A preview of how Extender teams deliver measurable progress in fintech, enterprise IT,
             and regulated gaming.
           </p>
           <div class="case-grid">
             <article class="card reveal">
-              <h3 class="card-title">Global Fintech Expansion</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.cases.card1.title">
+                Global Fintech Expansion
+              </h3>
+              <p class="card-text" data-i18n="index.cases.card1.text">
                 Built a cross-border compliance and growth pod to support regulated expansion.
               </p>
               <div class="case-meta">
-                <span><strong>Results:</strong> 3 markets live</span>
-                <span><strong>Budget:</strong> $450k - $750k</span>
-                <span><strong>Timeline:</strong> 6 months</span>
-                <span><strong>Focus:</strong> Compliance + Growth</span>
+                <span><strong data-i18n="case.results">Results:</strong> 3 markets live</span>
+                <span><strong data-i18n="case.budget">Budget:</strong> $450k - $750k</span>
+                <span><strong data-i18n="case.timeline">Timeline:</strong> 6 months</span>
+                <span><strong data-i18n="case.focus">Focus:</strong> Compliance + Growth</span>
               </div>
               <div class="tag-list">
-                <span class="tag">Fintech</span>
-                <span class="tag">Compliance</span>
+                <span class="tag" data-i18n="tag.fintech">Fintech</span>
+                <span class="tag" data-i18n="tag.compliance">Compliance</span>
               </div>
-              <a class="case-link" href="cases.html">View Case →</a>
+              <a class="case-link" href="cases.html" data-i18n="cta.viewCase">View Case →</a>
             </article>
             <article class="card reveal">
-              <h3 class="card-title">Enterprise Cloud Modernization</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.cases.card2.title">
+                Enterprise Cloud Modernization
+              </h3>
+              <p class="card-text" data-i18n="index.cases.card2.text">
                 Migrated legacy infrastructure to a secure, multi-region cloud environment.
               </p>
               <div class="case-meta">
-                <span><strong>Results:</strong> 42% cost savings</span>
-                <span><strong>Budget:</strong> $600k - $1.1M</span>
-                <span><strong>Timeline:</strong> 8 months</span>
-                <span><strong>Focus:</strong> Cloud + Security</span>
+                <span><strong data-i18n="case.results">Results:</strong> 42% cost savings</span>
+                <span><strong data-i18n="case.budget">Budget:</strong> $600k - $1.1M</span>
+                <span><strong data-i18n="case.timeline">Timeline:</strong> 8 months</span>
+                <span><strong data-i18n="case.focus">Focus:</strong> Cloud + Security</span>
               </div>
               <div class="tag-list">
-                <span class="tag">Enterprise IT</span>
-                <span class="tag">Cloud</span>
+                <span class="tag" data-i18n="tag.enterpriseIT">Enterprise IT</span>
+                <span class="tag" data-i18n="tag.cloud">Cloud</span>
               </div>
-              <a class="case-link" href="cases.html">View Case →</a>
+              <a class="case-link" href="cases.html" data-i18n="cta.viewCase">View Case →</a>
             </article>
             <article class="card reveal">
-              <h3 class="card-title">Compliance-Ready Gaming Platform</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="index.cases.card3.title">
+                Compliance-Ready Gaming Platform
+              </h3>
+              <p class="card-text" data-i18n="index.cases.card3.text">
                 Launched a betting operations team with strict audit controls and legal coverage.
               </p>
               <div class="case-meta">
-                <span><strong>Results:</strong> 0 audit findings</span>
-                <span><strong>Budget:</strong> $320k - $500k</span>
-                <span><strong>Timeline:</strong> 4 months</span>
-                <span><strong>Focus:</strong> Audit + Legal</span>
+                <span><strong data-i18n="case.results">Results:</strong> 0 audit findings</span>
+                <span><strong data-i18n="case.budget">Budget:</strong> $320k - $500k</span>
+                <span><strong data-i18n="case.timeline">Timeline:</strong> 4 months</span>
+                <span><strong data-i18n="case.focus">Focus:</strong> Audit + Legal</span>
               </div>
               <div class="tag-list">
-                <span class="tag">Gambling/Betting</span>
-                <span class="tag">Audit</span>
+                <span class="tag" data-i18n="tag.gambling">Gambling/Betting</span>
+                <span class="tag" data-i18n="tag.audit">Audit</span>
               </div>
-              <a class="case-link" href="cases.html">View Case →</a>
+              <a class="case-link" href="cases.html" data-i18n="cta.viewCase">View Case →</a>
             </article>
           </div>
         </div>
@@ -326,12 +365,12 @@
       <!-- CTA Section -->
       <section class="section cta-section">
         <div class="container reveal">
-          <span class="eyebrow">Let’s Build</span>
-          <h2 class="section-title">Ready to scale your next program?</h2>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="index.cta.eyebrow">Let’s Build</span>
+          <h2 class="section-title" data-i18n="index.cta.title">Ready to scale your next program?</h2>
+          <p class="section-subtitle" data-i18n="index.cta.subtitle">
             Share your scope and we will propose a dedicated execution team within 48 hours.
           </p>
-          <a class="btn btn-primary" href="contact.html">Request a Proposal</a>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.request">Request a Proposal</a>
         </div>
       </section>
     </main>
@@ -341,20 +380,22 @@
       <div class="container footer-grid">
         <div>
           <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
-          <p class="footer-meta">Dedicated execution teams for regulated, high-stakes programs.</p>
+          <p class="footer-meta" data-i18n="footer.tagline">
+            Dedicated execution teams for regulated, high-stakes programs.
+          </p>
         </div>
         <div class="footer-links">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="capabilities.html">Capabilities</a>
-          <a class="nav-link" href="cases.html">Cases</a>
-          <a class="nav-link" href="documents.html">Documents</a>
-          <a class="nav-link" href="careers.html">Careers</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="index.html" data-i18n="nav.home">Home</a>
+          <a class="nav-link" href="capabilities.html" data-i18n="nav.capabilities">Capabilities</a>
+          <a class="nav-link" href="cases.html" data-i18n="nav.cases">Cases</a>
+          <a class="nav-link" href="documents.html" data-i18n="nav.documents">Documents</a>
+          <a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a>
+          <a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
         </div>
         <div>
           <p class="footer-meta">hello@extender.cards</p>
-          <p class="footer-meta">LinkedIn: Extender</p>
-          <p class="footer-meta">© 2026 Extender. All rights reserved.</p>
+          <p class="footer-meta" data-i18n="footer.linkedin">LinkedIn: Extender</p>
+          <p class="footer-meta" data-i18n="footer.rights">© 2026 Extender. All rights reserved.</p>
         </div>
       </div>
     </footer>

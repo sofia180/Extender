@@ -35,19 +35,26 @@
         <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
         <nav class="nav" aria-label="Primary">
           <ul class="nav-list nav-menu" id="primary-menu">
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="capabilities.html">Capabilities</a></li>
-            <li><a class="nav-link active" href="cases.html">Cases</a></li>
-            <li><a class="nav-link" href="documents.html">Documents</a></li>
-            <li><a class="nav-link" href="careers.html">Careers</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a class="nav-link" href="capabilities.html" data-i18n="nav.capabilities">Capabilities</a></li>
+            <li><a class="nav-link active" href="cases.html" data-i18n="nav.cases">Cases</a></li>
+            <li><a class="nav-link" href="documents.html" data-i18n="nav.documents">Documents</a></li>
+            <li><a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a></li>
+            <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-actions">
-          <a class="btn btn-primary" href="contact.html">Request a Proposal</a>
+
+          <div class="lang-switcher" role="group" aria-label="Language">
+            <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+            <button class="lang-btn" type="button" data-lang="uk" aria-pressed="false">UA</button>
+            <button class="lang-btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.request">Request a Proposal</a>
           <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
             <span></span>
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only" data-i18n="nav.toggle">Toggle navigation</span>
           </button>
         </div>
       </div>
@@ -56,9 +63,11 @@
     <main id="main">
       <section class="section">
         <div class="container reveal">
-          <span class="eyebrow">Case Studies</span>
-          <h1 class="section-title">Proof of execution across enterprise programs.</h1>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="cases.hero.eyebrow">Case Studies</span>
+          <h1 class="section-title" data-i18n="cases.hero.title">
+            Proof of execution across enterprise programs.
+          </h1>
+          <p class="section-subtitle" data-i18n="cases.hero.subtitle">
             We deliver dedicated teams that operate at enterprise scale and move quickly from
             strategy to impact in fintech, enterprise IT, and regulated gaming.
           </p>
@@ -69,94 +78,96 @@
         <div class="container">
           <div class="case-grid">
             <article class="card case-card reveal">
-              <h3 class="card-title">Global Fintech Expansion</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="cases.card1.title">Global Fintech Expansion</h3>
+              <p class="card-text" data-i18n="cases.card1.text">
                 Deployed multi-region compliance, growth, and infrastructure pods to launch new
                 markets with regulatory alignment.
               </p>
               <div class="case-details">
-                <span><strong>Technologies:</strong> HubSpot, AWS, Tableau</span>
-                <span><strong>Duration:</strong> 6 months</span>
-                <span><strong>Budget:</strong> $450k - $750k</span>
+                <span><strong data-i18n="case.tech">Technologies:</strong> HubSpot, AWS, Tableau</span>
+                <span><strong data-i18n="case.duration">Duration:</strong> 6 months</span>
+                <span><strong data-i18n="case.budget">Budget:</strong> $450k - $750k</span>
               </div>
               <div class="tag-list">
-                <span class="tag">Fintech</span>
-                <span class="tag">Compliance</span>
+                <span class="tag" data-i18n="tag.fintech">Fintech</span>
+                <span class="tag" data-i18n="tag.compliance">Compliance</span>
               </div>
             </article>
             <article class="card case-card reveal">
-              <h3 class="card-title">Enterprise Cloud Modernization</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="cases.card2.title">Enterprise Cloud Modernization</h3>
+              <p class="card-text" data-i18n="cases.card2.text">
                 Migrated legacy systems to a resilient cloud architecture with 24/7 operations.
               </p>
               <div class="case-details">
-                <span><strong>Technologies:</strong> Azure, Terraform, Datadog</span>
-                <span><strong>Duration:</strong> 8 months</span>
-                <span><strong>Budget:</strong> $600k - $1.1M</span>
+                <span><strong data-i18n="case.tech">Technologies:</strong> Azure, Terraform, Datadog</span>
+                <span><strong data-i18n="case.duration">Duration:</strong> 8 months</span>
+                <span><strong data-i18n="case.budget">Budget:</strong> $600k - $1.1M</span>
               </div>
               <div class="tag-list">
-                <span class="tag">Enterprise IT</span>
-                <span class="tag">Cloud</span>
+                <span class="tag" data-i18n="tag.enterpriseIT">Enterprise IT</span>
+                <span class="tag" data-i18n="tag.cloud">Cloud</span>
               </div>
             </article>
             <article class="card case-card reveal">
-              <h3 class="card-title">Compliance-Ready Gaming Platform</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="cases.card3.title">
+                Compliance-Ready Gaming Platform
+              </h3>
+              <p class="card-text" data-i18n="cases.card3.text">
                 Built audit-ready operational workflows and legal frameworks for regulated launch.
               </p>
               <div class="case-details">
-                <span><strong>Technologies:</strong> Jira, OneTrust, Snowflake</span>
-                <span><strong>Duration:</strong> 4 months</span>
-                <span><strong>Budget:</strong> $320k - $500k</span>
+                <span><strong data-i18n="case.tech">Technologies:</strong> Jira, OneTrust, Snowflake</span>
+                <span><strong data-i18n="case.duration">Duration:</strong> 4 months</span>
+                <span><strong data-i18n="case.budget">Budget:</strong> $320k - $500k</span>
               </div>
               <div class="tag-list">
-                <span class="tag">Gambling/Betting</span>
-                <span class="tag">Audit</span>
+                <span class="tag" data-i18n="tag.gambling">Gambling/Betting</span>
+                <span class="tag" data-i18n="tag.audit">Audit</span>
               </div>
             </article>
             <article class="card case-card reveal">
-              <h3 class="card-title">Enterprise Procurement Program</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="cases.card4.title">Enterprise Procurement Program</h3>
+              <p class="card-text" data-i18n="cases.card4.text">
                 Led global tender responses with centralized legal and operational support.
               </p>
               <div class="case-details">
-                <span><strong>Technologies:</strong> DocuSign, Salesforce, Power BI</span>
-                <span><strong>Duration:</strong> 5 months</span>
-                <span><strong>Budget:</strong> $280k - $420k</span>
+                <span><strong data-i18n="case.tech">Technologies:</strong> DocuSign, Salesforce, Power BI</span>
+                <span><strong data-i18n="case.duration">Duration:</strong> 5 months</span>
+                <span><strong data-i18n="case.budget">Budget:</strong> $280k - $420k</span>
               </div>
               <div class="tag-list">
-                <span class="tag">Enterprise IT</span>
-                <span class="tag">Legal Ops</span>
+                <span class="tag" data-i18n="tag.enterpriseIT">Enterprise IT</span>
+                <span class="tag" data-i18n="tag.legalOps">Legal Ops</span>
               </div>
             </article>
             <article class="card case-card reveal">
-              <h3 class="card-title">Automation for Financial Ops</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="cases.card5.title">Automation for Financial Ops</h3>
+              <p class="card-text" data-i18n="cases.card5.text">
                 Implemented automation to reduce month-end close from 10 days to 4 days.
               </p>
               <div class="case-details">
-                <span><strong>Technologies:</strong> UiPath, NetSuite, SQL Server</span>
-                <span><strong>Duration:</strong> 3 months</span>
-                <span><strong>Budget:</strong> $180k - $260k</span>
+                <span><strong data-i18n="case.tech">Technologies:</strong> UiPath, NetSuite, SQL Server</span>
+                <span><strong data-i18n="case.duration">Duration:</strong> 3 months</span>
+                <span><strong data-i18n="case.budget">Budget:</strong> $180k - $260k</span>
               </div>
               <div class="tag-list">
-                <span class="tag">Fintech</span>
-                <span class="tag">Automation</span>
+                <span class="tag" data-i18n="tag.fintech">Fintech</span>
+                <span class="tag" data-i18n="tag.automation">Automation</span>
               </div>
             </article>
             <article class="card case-card reveal">
-              <h3 class="card-title">Blockchain Settlement Network</h3>
-              <p class="card-text">
+              <h3 class="card-title" data-i18n="cases.card6.title">Blockchain Settlement Network</h3>
+              <p class="card-text" data-i18n="cases.card6.text">
                 Delivered a secure settlement layer and governance model for enterprise partners.
               </p>
               <div class="case-details">
-                <span><strong>Technologies:</strong> Solidity, Polygon, Chainlink</span>
-                <span><strong>Duration:</strong> 7 months</span>
-                <span><strong>Budget:</strong> $520k - $900k</span>
+                <span><strong data-i18n="case.tech">Technologies:</strong> Solidity, Polygon, Chainlink</span>
+                <span><strong data-i18n="case.duration">Duration:</strong> 7 months</span>
+                <span><strong data-i18n="case.budget">Budget:</strong> $520k - $900k</span>
               </div>
               <div class="tag-list">
-                <span class="tag">Fintech</span>
-                <span class="tag">Web3</span>
+                <span class="tag" data-i18n="tag.fintech">Fintech</span>
+                <span class="tag" data-i18n="tag.web3">Web3</span>
               </div>
             </article>
           </div>
@@ -165,12 +176,12 @@
 
       <section class="section cta-section">
         <div class="container reveal">
-          <span class="eyebrow">Partner With Us</span>
-          <h2 class="section-title">Let's build your next case study.</h2>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="cases.cta.eyebrow">Partner With Us</span>
+          <h2 class="section-title" data-i18n="cases.cta.title">Let's build your next case study.</h2>
+          <p class="section-subtitle" data-i18n="cases.cta.subtitle">
             Tell us where you need execution support and we will align the right team.
           </p>
-          <a class="btn btn-primary" href="contact.html">Request a Proposal</a>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.request">Request a Proposal</a>
         </div>
       </section>
     </main>
@@ -180,20 +191,22 @@
       <div class="container footer-grid">
         <div>
           <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
-          <p class="footer-meta">Dedicated execution teams for regulated, high-stakes programs.</p>
+          <p class="footer-meta" data-i18n="footer.tagline">
+            Dedicated execution teams for regulated, high-stakes programs.
+          </p>
         </div>
         <div class="footer-links">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="capabilities.html">Capabilities</a>
-          <a class="nav-link" href="cases.html">Cases</a>
-          <a class="nav-link" href="documents.html">Documents</a>
-          <a class="nav-link" href="careers.html">Careers</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="index.html" data-i18n="nav.home">Home</a>
+          <a class="nav-link" href="capabilities.html" data-i18n="nav.capabilities">Capabilities</a>
+          <a class="nav-link" href="cases.html" data-i18n="nav.cases">Cases</a>
+          <a class="nav-link" href="documents.html" data-i18n="nav.documents">Documents</a>
+          <a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a>
+          <a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
         </div>
         <div>
           <p class="footer-meta">hello@extender.cards</p>
-          <p class="footer-meta">LinkedIn: Extender</p>
-          <p class="footer-meta">© 2026 Extender. All rights reserved.</p>
+          <p class="footer-meta" data-i18n="footer.linkedin">LinkedIn: Extender</p>
+          <p class="footer-meta" data-i18n="footer.rights">© 2026 Extender. All rights reserved.</p>
         </div>
       </div>
     </footer>

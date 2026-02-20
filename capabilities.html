@@ -35,19 +35,26 @@
         <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
         <nav class="nav" aria-label="Primary">
           <ul class="nav-list nav-menu" id="primary-menu">
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link active" href="capabilities.html">Capabilities</a></li>
-            <li><a class="nav-link" href="cases.html">Cases</a></li>
-            <li><a class="nav-link" href="documents.html">Documents</a></li>
-            <li><a class="nav-link" href="careers.html">Careers</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a class="nav-link active" href="capabilities.html" data-i18n="nav.capabilities">Capabilities</a></li>
+            <li><a class="nav-link" href="cases.html" data-i18n="nav.cases">Cases</a></li>
+            <li><a class="nav-link" href="documents.html" data-i18n="nav.documents">Documents</a></li>
+            <li><a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a></li>
+            <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-actions">
-          <a class="btn btn-primary" href="contact.html">Request a Proposal</a>
+
+          <div class="lang-switcher" role="group" aria-label="Language">
+            <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+            <button class="lang-btn" type="button" data-lang="uk" aria-pressed="false">UA</button>
+            <button class="lang-btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.request">Request a Proposal</a>
           <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
             <span></span>
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only" data-i18n="nav.toggle">Toggle navigation</span>
           </button>
         </div>
       </div>
@@ -56,9 +63,11 @@
     <main id="main">
       <section class="section">
         <div class="container reveal">
-          <span class="eyebrow">Capabilities</span>
-          <h1 class="section-title">Execution pods built for regulated growth and complex delivery.</h1>
-          <p class="section-subtitle">
+          <span class="eyebrow" data-i18n="capabilities.hero.eyebrow">Capabilities</span>
+          <h1 class="section-title" data-i18n="capabilities.hero.title">
+            Execution pods built for regulated growth and complex delivery.
+          </h1>
+          <p class="section-subtitle" data-i18n="capabilities.hero.subtitle">
             Extender assembles dedicated teams that combine strategy, execution, and governance. Each
             pod is built around measurable outcomes, compliance, and enterprise-grade accountability.
           </p>
@@ -70,7 +79,7 @@
           <div class="cap-list">
             <div class="cap-item reveal">
               <button class="cap-toggle" aria-expanded="false" aria-controls="cap-lead">
-                <span>Lead Generation / Outreach</span>
+                <span data-i18n="capabilities.lead.title">Lead Generation / Outreach</span>
                 <span class="cap-icon">+</span>
               </button>
               <div class="cap-content" id="cap-lead">
@@ -83,22 +92,30 @@
                     />
                   </div>
                   <div>
-                    <p>
+                    <p data-i18n="capabilities.lead.p1">
                       We design full-funnel outbound engines: ICP definition, data sourcing,
                       enrichment, multi-channel sequencing, compliant dialing, and CRM hygiene. The
                       focus is predictable pipeline growth with regulatory guardrails.
                     </p>
-                    <p>
+                    <p data-i18n="capabilities.lead.p2">
                       Pods include a growth strategist, SDR manager, QA lead, and enablement support
                       to keep outreach consistent and measured against weekly targets.
                     </p>
                     <ul class="cap-points">
-                      <li>ICP research, list building, enrichment, and segmentation.</li>
-                      <li>Email, call, and LinkedIn sequences with tested scripts.</li>
-                      <li>Lead scoring, handoff SLAs, and CRM automation.</li>
-                      <li>QA coaching, conversion analytics, and reporting.</li>
+                      <li data-i18n="capabilities.lead.b1">
+                        ICP research, list building, enrichment, and segmentation.
+                      </li>
+                      <li data-i18n="capabilities.lead.b2">
+                        Email, call, and LinkedIn sequences with tested scripts.
+                      </li>
+                      <li data-i18n="capabilities.lead.b3">
+                        Lead scoring, handoff SLAs, and CRM automation.
+                      </li>
+                      <li data-i18n="capabilities.lead.b4">
+                        QA coaching, conversion analytics, and reporting.
+                      </li>
                     </ul>
-                    <div class="cap-meta">
+                    <div class="cap-meta" data-i18n="capabilities.lead.meta">
                       Deliverables: ICP deck, sequence library, scripts, KPI dashboard, QA scorecards.
                     </div>
                   </div>
@@ -108,7 +125,7 @@
 
             <div class="cap-item reveal">
               <button class="cap-toggle" aria-expanded="false" aria-controls="cap-marketing">
-                <span>Marketing / SMM / Content</span>
+                <span data-i18n="capabilities.marketing.title">Marketing / SMM / Content</span>
                 <span class="cap-icon">+</span>
               </button>
               <div class="cap-content" id="cap-marketing">
@@ -121,22 +138,30 @@
                     />
                   </div>
                   <div>
-                    <p>
+                    <p data-i18n="capabilities.marketing.p1">
                       Full-funnel marketing operations that align brand, performance, and retention.
                       We deliver positioning, structured content calendars, social management, and
                       paid media execution with enterprise-grade reporting.
                     </p>
-                    <p>
+                    <p data-i18n="capabilities.marketing.p2">
                       Teams blend creative strategy, channel management, and analytics to deliver
                       predictable CAC improvements and pipeline contribution.
                     </p>
                     <ul class="cap-points">
-                      <li>Content strategy, editorial calendar, and channel plan.</li>
-                      <li>SMM management, community moderation, and social reporting.</li>
-                      <li>Paid performance with KPI-driven optimization and CRO.</li>
-                      <li>Lifecycle messaging, CRM flows, and retention programs.</li>
+                      <li data-i18n="capabilities.marketing.b1">
+                        Content strategy, editorial calendar, and channel plan.
+                      </li>
+                      <li data-i18n="capabilities.marketing.b2">
+                        SMM management, community moderation, and social reporting.
+                      </li>
+                      <li data-i18n="capabilities.marketing.b3">
+                        Paid performance with KPI-driven optimization and CRO.
+                      </li>
+                      <li data-i18n="capabilities.marketing.b4">
+                        Lifecycle messaging, CRM flows, and retention programs.
+                      </li>
                     </ul>
-                    <div class="cap-meta">
+                    <div class="cap-meta" data-i18n="capabilities.marketing.meta">
                       Deliverables: content calendar, channel plan, creative assets, KPI reports.
                     </div>
                   </div>
@@ -146,7 +171,7 @@
 
             <div class="cap-item reveal">
               <button class="cap-toggle" aria-expanded="false" aria-controls="cap-design">
-                <span>Design / Landing / Creative</span>
+                <span data-i18n="capabilities.design.title">Design / Landing / Creative</span>
                 <span class="cap-icon">+</span>
               </button>
               <div class="cap-content" id="cap-design">
@@ -159,22 +184,26 @@
                     />
                   </div>
                   <div>
-                    <p>
+                    <p data-i18n="capabilities.design.p1">
                       Conversion-first design systems, landing pages, and creative production. We
                       design for enterprise credibility and measurable conversion across regulated
                       markets and complex stakeholder environments.
                     </p>
-                    <p>
+                    <p data-i18n="capabilities.design.p2">
                       Creative pods include UX/UI, brand, motion, and copy specialists aligned to
                       campaign and product goals.
                     </p>
                     <ul class="cap-points">
-                      <li>UX research, wireframes, and rapid prototyping.</li>
-                      <li>Landing pages and microsites optimized for conversion.</li>
-                      <li>Brand systems, UI kits, and design tokens.</li>
-                      <li>Campaign creative, motion, and asset production.</li>
+                      <li data-i18n="capabilities.design.b1">UX research, wireframes, and rapid prototyping.</li>
+                      <li data-i18n="capabilities.design.b2">
+                        Landing pages and microsites optimized for conversion.
+                      </li>
+                      <li data-i18n="capabilities.design.b3">Brand systems, UI kits, and design tokens.</li>
+                      <li data-i18n="capabilities.design.b4">
+                        Campaign creative, motion, and asset production.
+                      </li>
                     </ul>
-                    <div class="cap-meta">
+                    <div class="cap-meta" data-i18n="capabilities.design.meta">
                       Deliverables: UI kit, landing pages, creative library, interactive prototypes.
                     </div>
                   </div>
@@ -184,7 +213,7 @@
 
             <div class="cap-item reveal">
               <button class="cap-toggle" aria-expanded="false" aria-controls="cap-automation">
-                <span>IT / Automation / Bots</span>
+                <span data-i18n="capabilities.automation.title">IT / Automation / Bots</span>
                 <span class="cap-icon">+</span>
               </button>
               <div class="cap-content" id="cap-automation">
@@ -197,22 +226,28 @@
                     />
                   </div>
                   <div>
-                    <p>
+                    <p data-i18n="capabilities.automation.p1">
                       Automation engineers build internal tools, bots, and system integrations that
                       reduce operational friction. We connect CRM, ERP, analytics, and data sources
                       into a single automated workflow.
                     </p>
-                    <p>
+                    <p data-i18n="capabilities.automation.p2">
                       This capability accelerates delivery while keeping governance, security, and
                       access controls aligned to enterprise standards.
                     </p>
                     <ul class="cap-points">
-                      <li>API integrations, data synchronization, and ETL pipelines.</li>
-                      <li>RPA and bot development for repetitive operations.</li>
-                      <li>Internal tools, dashboards, and workflow orchestration.</li>
-                      <li>Monitoring, runbooks, and documentation.</li>
+                      <li data-i18n="capabilities.automation.b1">
+                        API integrations, data synchronization, and ETL pipelines.
+                      </li>
+                      <li data-i18n="capabilities.automation.b2">
+                        RPA and bot development for repetitive operations.
+                      </li>
+                      <li data-i18n="capabilities.automation.b3">
+                        Internal tools, dashboards, and workflow orchestration.
+                      </li>
+                      <li data-i18n="capabilities.automation.b4">Monitoring, runbooks, and documentation.</li>
                     </ul>
-                    <div class="cap-meta">
+                    <div class="cap-meta" data-i18n="capabilities.automation.meta">
                       Deliverables: automation workflows, bot scripts, integration docs, runbooks.
                     </div>
                   </div>
@@ -222,7 +257,7 @@
 
             <div class="cap-item reveal">
               <button class="cap-toggle" aria-expanded="false" aria-controls="cap-audit">
-                <span>Audit (Financial, Marketing, IT)</span>
+                <span data-i18n="capabilities.audit.title">Audit (Financial, Marketing, IT)</span>
                 <span class="cap-icon">+</span>
               </button>
               <div class="cap-content" id="cap-audit">
@@ -235,22 +270,30 @@
                     />
                   </div>
                   <div>
-                    <p>
+                    <p data-i18n="capabilities.audit.p1">
                       Independent audits across finance, marketing spend, and IT architecture. We
                       identify cost leakage, compliance gaps, and optimization opportunities with
                       clear remediation plans.
                     </p>
-                    <p>
+                    <p data-i18n="capabilities.audit.p2">
                       Audits are delivered with executive-ready reporting, risk scoring, and a
                       prioritized remediation roadmap.
                     </p>
                     <ul class="cap-points">
-                      <li>Financial controls review and cost leak analysis.</li>
-                      <li>Marketing ROI, channel efficiency, and attribution reviews.</li>
-                      <li>IT architecture, cloud costs, and vendor risk assessments.</li>
-                      <li>Compliance gap analysis and remediation planning.</li>
+                      <li data-i18n="capabilities.audit.b1">
+                        Financial controls review and cost leak analysis.
+                      </li>
+                      <li data-i18n="capabilities.audit.b2">
+                        Marketing ROI, channel efficiency, and attribution reviews.
+                      </li>
+                      <li data-i18n="capabilities.audit.b3">
+                        IT architecture, cloud costs, and vendor risk assessments.
+                      </li>
+                      <li data-i18n="capabilities.audit.b4">
+                        Compliance gap analysis and remediation planning.
+                      </li>
                     </ul>
-                    <div class="cap-meta">
+                    <div class="cap-meta" data-i18n="capabilities.audit.meta">
                       Deliverables: audit report, risk matrix, remediation roadmap.
                     </div>
                   </div>
@@ -260,7 +303,7 @@
 
             <div class="cap-item reveal">
               <button class="cap-toggle" aria-expanded="false" aria-controls="cap-security">
-                <span>Security (Cyber, Data, Risk)</span>
+                <span data-i18n="capabilities.security.title">Security (Cyber, Data, Risk)</span>
                 <span class="cap-icon">+</span>
               </button>
               <div class="cap-content" id="cap-security">
@@ -273,22 +316,30 @@
                     />
                   </div>
                   <div>
-                    <p>
+                    <p data-i18n="capabilities.security.p1">
                       Security posture reviews, vulnerability management, and data protection
                       programs aligned to SOC 2, ISO, and regional standards. We evaluate risks and
                       build mitigation plans with measurable impact.
                     </p>
-                    <p>
+                    <p data-i18n="capabilities.security.p2">
                       This includes threat modeling, governance design, and incident response
                       playbooks with executive visibility.
                     </p>
                     <ul class="cap-points">
-                      <li>Security architecture review and threat modeling.</li>
-                      <li>IAM, data protection, and encryption policies.</li>
-                      <li>Compliance readiness for SOC 2, ISO, and audits.</li>
-                      <li>Incident response planning and tabletop exercises.</li>
+                      <li data-i18n="capabilities.security.b1">
+                        Security architecture review and threat modeling.
+                      </li>
+                      <li data-i18n="capabilities.security.b2">
+                        IAM, data protection, and encryption policies.
+                      </li>
+                      <li data-i18n="capabilities.security.b3">
+                        Compliance readiness for SOC 2, ISO, and audits.
+                      </li>
+                      <li data-i18n="capabilities.security.b4">
+                        Incident response planning and tabletop exercises.
+                      </li>
                     </ul>
-                    <div class="cap-meta">
+                    <div class="cap-meta" data-i18n="capabilities.security.meta">
                       Deliverables: security assessment, control map, IR playbook.
                     </div>
                   </div>
@@ -298,7 +349,7 @@
 
             <div class="cap-item reveal">
               <button class="cap-toggle" aria-expanded="false" aria-controls="cap-cloud">
-                <span>Cloud Services / Storage / Infrastructure</span>
+                <span data-i18n="capabilities.cloud.title">Cloud Services / Storage / Infrastructure</span>
                 <span class="cap-icon">+</span>
               </button>
               <div class="cap-content" id="cap-cloud">
@@ -311,22 +362,30 @@
                     />
                   </div>
                   <div>
-                    <p>
+                    <p data-i18n="capabilities.cloud.p1">
                       Cloud migration, storage strategy, and infrastructure operations with cost
                       governance and SRE coverage. We deliver resilient systems built for compliance
                       and scale.
                     </p>
-                    <p>
+                    <p data-i18n="capabilities.cloud.p2">
                       Teams include cloud architects, DevOps/SRE, and security specialists aligned
                       to your internal IT leadership.
                     </p>
                     <ul class="cap-points">
-                      <li>Cloud architecture, migration planning, and execution.</li>
-                      <li>Infrastructure as code, CI/CD, and automation.</li>
-                      <li>Monitoring, SRE coverage, and disaster recovery.</li>
-                      <li>FinOps, cost optimization, and capacity planning.</li>
+                      <li data-i18n="capabilities.cloud.b1">
+                        Cloud architecture, migration planning, and execution.
+                      </li>
+                      <li data-i18n="capabilities.cloud.b2">
+                        Infrastructure as code, CI/CD, and automation.
+                      </li>
+                      <li data-i18n="capabilities.cloud.b3">
+                        Monitoring, SRE coverage, and disaster recovery.
+                      </li>
+                      <li data-i18n="capabilities.cloud.b4">
+                        FinOps, cost optimization, and capacity planning.
+                      </li>
                     </ul>
-                    <div class="cap-meta">
+                    <div class="cap-meta" data-i18n="capabilities.cloud.meta">
                       Deliverables: cloud blueprint, IaC modules, runbooks, FinOps plan.
                     </div>
                   </div>
@@ -336,7 +395,7 @@
 
             <div class="cap-item reveal">
               <button class="cap-toggle" aria-expanded="false" aria-controls="cap-blockchain">
-                <span>Blockchain / Crypto Due Diligence</span>
+                <span data-i18n="capabilities.blockchain.title">Blockchain / Crypto Due Diligence</span>
                 <span class="cap-icon">+</span>
               </button>
               <div class="cap-content" id="cap-blockchain">
@@ -349,22 +408,30 @@
                     />
                   </div>
                   <div>
-                    <p>
+                    <p data-i18n="capabilities.blockchain.p1">
                       Deep technical and legal due diligence for blockchain projects, crypto
                       startups, and tokenized ventures. We evaluate smart contracts, governance, and
                       operational readiness.
                     </p>
-                    <p>
+                    <p data-i18n="capabilities.blockchain.p2">
                       This capability is built for investors, enterprise partners, and regulated
                       operators needing clarity before commitment.
                     </p>
                     <ul class="cap-points">
-                      <li>Smart contract review and security checks.</li>
-                      <li>Tokenomics, treasury, and governance validation.</li>
-                      <li>Regulatory alignment, KYC/AML, and risk scoring.</li>
-                      <li>Business model and market validation.</li>
+                      <li data-i18n="capabilities.blockchain.b1">
+                        Smart contract review and security checks.
+                      </li>
+                      <li data-i18n="capabilities.blockchain.b2">
+                        Tokenomics, treasury, and governance validation.
+                      </li>
+                      <li data-i18n="capabilities.blockchain.b3">
+                        Regulatory alignment, KYC/AML, and risk scoring.
+                      </li>
+                      <li data-i18n="capabilities.blockchain.b4">
+                        Business model and market validation.
+                      </li>
                     </ul>
-                    <div class="cap-meta">
+                    <div class="cap-meta" data-i18n="capabilities.blockchain.meta">
                       Deliverables: due diligence report, risk rating, go/no-go memo.
                     </div>
                   </div>
@@ -374,7 +441,7 @@
 
             <div class="cap-item reveal">
               <button class="cap-toggle" aria-expanded="false" aria-controls="cap-legal">
-                <span>Legal &amp; Compliance</span>
+                <span data-i18n="capabilities.legal.title">Legal &amp; Compliance</span>
                 <span class="cap-icon">+</span>
               </button>
               <div class="cap-content" id="cap-legal">
@@ -387,22 +454,30 @@
                     />
                   </div>
                   <div>
-                    <p>
+                    <p data-i18n="capabilities.legal.p1">
                       Legal operations for enterprise delivery: contracts, procurement workflows,
                       regulatory readiness, and policy management. We align internal teams with
                       external counsel for fast execution.
                     </p>
-                    <p>
+                    <p data-i18n="capabilities.legal.p2">
                       This capability supports regulated markets, including fintech and gambling,
                       across multiple jurisdictions.
                     </p>
                     <ul class="cap-points">
-                      <li>MSA/SOW drafting, procurement support, and redlines.</li>
-                      <li>Regulatory mapping, licensing, and compliance checks.</li>
-                      <li>Policy architecture and internal training programs.</li>
-                      <li>Vendor due diligence and cross-jurisdiction support.</li>
+                      <li data-i18n="capabilities.legal.b1">
+                        MSA/SOW drafting, procurement support, and redlines.
+                      </li>
+                      <li data-i18n="capabilities.legal.b2">
+                        Regulatory mapping, licensing, and compliance checks.
+                      </li>
+                      <li data-i18n="capabilities.legal.b3">
+                        Policy architecture and internal training programs.
+                      </li>
+                      <li data-i18n="capabilities.legal.b4">
+                        Vendor due diligence and cross-jurisdiction support.
+                      </li>
                     </ul>
-                    <div class="cap-meta">
+                    <div class="cap-meta" data-i18n="capabilities.legal.meta">
                       Deliverables: contract pack, compliance checklists, legal SOPs.
                     </div>
                   </div>
@@ -420,7 +495,7 @@
           <p class="section-subtitle">
             Share your timeline and we will map a delivery plan aligned to enterprise objectives.
           </p>
-          <a class="btn btn-primary" href="contact.html">Request a Proposal</a>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.request">Request a Proposal</a>
         </div>
       </section>
     </main>
@@ -430,20 +505,22 @@
       <div class="container footer-grid">
         <div>
           <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">EX</span>Extender</a>
-          <p class="footer-meta">Dedicated execution teams for regulated, high-stakes programs.</p>
+          <p class="footer-meta" data-i18n="footer.tagline">
+            Dedicated execution teams for regulated, high-stakes programs.
+          </p>
         </div>
         <div class="footer-links">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="capabilities.html">Capabilities</a>
-          <a class="nav-link" href="cases.html">Cases</a>
-          <a class="nav-link" href="documents.html">Documents</a>
-          <a class="nav-link" href="careers.html">Careers</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="index.html" data-i18n="nav.home">Home</a>
+          <a class="nav-link" href="capabilities.html" data-i18n="nav.capabilities">Capabilities</a>
+          <a class="nav-link" href="cases.html" data-i18n="nav.cases">Cases</a>
+          <a class="nav-link" href="documents.html" data-i18n="nav.documents">Documents</a>
+          <a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a>
+          <a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
         </div>
         <div>
           <p class="footer-meta">hello@extender.cards</p>
-          <p class="footer-meta">LinkedIn: Extender</p>
-          <p class="footer-meta">© 2026 Extender. All rights reserved.</p>
+          <p class="footer-meta" data-i18n="footer.linkedin">LinkedIn: Extender</p>
+          <p class="footer-meta" data-i18n="footer.rights">© 2026 Extender. All rights reserved.</p>
         </div>
       </div>
     </footer>
