@@ -689,6 +689,89 @@ main {
   color: var(--muted);
 }
 
+.pricing-scope-note {
+  margin-top: 18px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(75, 123, 255, 0.24);
+  background: rgba(75, 123, 255, 0.08);
+  max-width: 900px;
+  color: var(--muted-dark);
+}
+
+.pricing-section {
+  margin-top: 48px;
+}
+
+.pricing-section-title {
+  margin: 0 0 18px;
+  font-size: 1.65rem;
+  letter-spacing: -0.01em;
+}
+
+.table-wrap {
+  border-radius: 18px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 860px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-strong);
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+
+.pricing-table th {
+  text-align: left;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: rgba(7, 10, 18, 0.85);
+}
+
+.pricing-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table tbody tr:hover {
+  background: rgba(75, 123, 255, 0.08);
+}
+
+.section-light .pricing-scope-note {
+  color: var(--muted-dark);
+}
+
+.section-light .table-wrap {
+  border-color: var(--border-light);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.section-light .pricing-table th,
+.section-light .pricing-table td {
+  border-bottom-color: var(--border-light);
+}
+
+.section-light .pricing-table th {
+  background: #f2f4fb;
+  color: var(--muted-dark);
+}
+
+.section-light .pricing-table td {
+  color: var(--text-dark);
+}
+
 /* Documents */
 .doc-toc {
   display: flex;
